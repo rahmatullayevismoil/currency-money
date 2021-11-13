@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Currency</title>
+  </head>
+  <body class="pt-5">
+    <div class="container">
+      <form
+        class="form__select"
+        action="https://echo.htmlacademy.ru/"
+        id="idForm"
+        method="get"
+        name="user_form"
+      >
+        <div class="box mb-3">
+          <label for="formInput" class="form-label text-primary" id="inputLabel"
+            >Narxni kiriting</label
+          >
+          <input
+            style="width: 400px"
+            type="number"
+            class="form-control text-primary p-3"
+            name="user_valyute"
+            id="formInput"
+          />
+        </div>
+
+        <label for="formLabel" class="form-label text-primary" id="inputSelect"
+          >Tanlang</label
+        >
+        <br />
+        <select
+          class="form-select text-primary p-3 mb-4"
+          id="formSelect"
+          aria-label="Default select example"
+          name="user_select"
+        >
+          <option disabled selected hidden value="Valyutani tanlang">
+            Valyutani tanlang
+          </option>
+          <option class="text-success" name="1" value="UZD">UZD</option>
+          <option class="text-danger" name="2" value="EUR">EUR</option>
+          <option class="text-warning" name="3" value="RUB">RUB</option>
+        </select>
+
+        <div class="">
+          <button
+            type="submit"
+            id="btn"
+            class="btn btn-primary text-light p-3 mb-4"
+            name="user_btn"
+          >
+            Jo'natish
+          </button>
+        </div>
+      </form>
+      <h2 class="money" id="textMoney">Summa</h2>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
