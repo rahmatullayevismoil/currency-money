@@ -25,11 +25,11 @@ elForm.addEventListener("submit", (dd) =>{
 
     if (select == "EUR") {
         result = input / UZS_TO_EUR
-        elResult.textContent = Math.floor(result).toFixed(1)
+        elResult.textContent = result.toFixed(1)
     }
 
     if (select == "RUB") {
         result = input / UZS_TO_RUB
-        elResult.textContent = Math.floor(result).toFixed(1)
+        elResult.textContent = result.toFixed(1)
     }
 })
