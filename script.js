@@ -20,7 +20,7 @@ elForm.addEventListener("submit", (dd) =>{
     if (select == "UZD") {
         result = input / UZS_TO_USD
         console.log(elResult);
-        elResult.textContent = Math.floor(result).toFixed(1)
+        elResult.textContent = result.toFixed(1)
     }
 
     if (select == "EUR") {
